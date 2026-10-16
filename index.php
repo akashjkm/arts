@@ -799,6 +799,27 @@ include 'includes/header.php';
         </div>
 
     </section>
+    
+<!-- LEFT SIDE PHONE NUMBER -->
+<a href="tel:+919643386541" class="aoc-side-phone">
+    <i class="bi bi-telephone-fill"></i>
+    <span>+91 96433 86541</span>
+</a>
+
+<!-- RIGHT SIDE SOCIAL MEDIA -->
+<div class="aoc-side-social">
+    <a href="#" aria-label="Facebook">Facebook</a>
+    <a href="#" aria-label="Twitter">Twitter</a>
+    <a href="#" aria-label="Instagram">Instagram</a>
+</div>
+
+<!-- BOTTOM SCROLL ANIMATION -->
+<a href="#services"
+   class="aoc-scroll-indicator"
+   aria-label="Scroll to services">
+    <span></span>
+</a>
+
 
 </main>
 

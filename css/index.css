@@ -1053,3 +1053,327 @@ img {
     }
 
 }
+
+
+
+/* ===============================
+   SIDE PHONE NUMBER
+================================ */
+.aoc-side-phone {
+    position: fixed;
+    top: 40%;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding: 20px 12px;
+    background: #501717;
+    color: #fff;
+    border-radius: 0 18px 18px 0;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+
+.aoc-side-phone:hover {
+    background: #713030;
+    color: #fff;
+}
+
+/* ===============================
+   RIGHT SOCIAL LINKS
+================================ */
+.aoc-side-social {
+    position: fixed;
+    top: 37%;
+    right: 18px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.aoc-side-social a {
+    writing-mode: vertical-rl;
+    color: #34445a;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.aoc-side-social a:hover {
+    color: #501717;
+}
+
+/* ===============================
+   BOTTOM SCROLL INDICATOR
+================================ */
+.aoc-scroll-indicator {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 998;
+    width: 22px;
+    height: 40px;
+    border: 2px solid #292929;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+    text-decoration: none;
+    background: transparent;
+}
+
+.aoc-scroll-indicator span {
+    width: 4px;
+    height: 7px;
+    background: #292929;
+    border-radius: 4px;
+    animation: aocScroll 1.2s ease-in-out infinite;
+}
+
+@keyframes aocScroll {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(14px);
+        opacity: 0;
+    }
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+    .aoc-side-phone,
+    .aoc-side-social {
+        display: none;
+    }
+
+    .aoc-scroll-indicator {
+        bottom: 12px;
+    }
+}
+
+
+
+/* MOBILE: SHOW SIDE PHONE AND SOCIAL LINKS */
+@media (max-width: 768px) {
+    .aoc-side-phone {
+        display: flex !important;
+        position: fixed;
+        left: 0;
+        top: 48%;
+        z-index: 1000;
+        padding: 14px 8px;
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .aoc-side-social {
+        display: flex !important;
+        position: fixed;
+        right: 8px;
+        top: 43%;
+        z-index: 1000;
+        gap: 25px;
+    }
+
+    .aoc-side-social a {
+        font-size: 11px;
+    }
+
+    .aoc-hero {
+        overflow: visible;
+    }
+
+    .aoc-hero-content,
+    .aoc-hero-collage {
+        position: relative;
+        z-index: 1;
+    }
+}
+
+
+
+
+/* ==========================================
+   ARTS OF CATERING - FINAL MOBILE FIX
+========================================== */
+
+@media screen and (max-width: 767px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Hero layout */
+    .aoc-hero {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .aoc-hero-inner {
+        width: calc(100% - 38px);
+        max-width: 100%;
+        min-height: auto;
+        margin: 0 8px 0 30px;
+        padding: 35px 8px 25px;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    /* Hero text */
+    .aoc-hero-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .aoc-hero-label {
+        font-size: 12px;
+        letter-spacing: 1.4px;
+        margin-bottom: 14px;
+    }
+
+    .aoc-hero-content h1 {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 18px;
+        font-size: clamp(28px, 8vw, 36px);
+        line-height: 1.12;
+        overflow-wrap: break-word;
+    }
+
+    .aoc-hero-content p {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 24px;
+        font-size: 14px;
+        line-height: 1.7;
+        overflow-wrap: break-word;
+    }
+
+    /* Buttons */
+    .aoc-hero-buttons {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        margin: 0;
+    }
+
+    .aoc-hero-buttons .aoc-btn {
+        width: 100%;
+        max-width: 100%;
+        min-height: 48px;
+        margin: 0;
+        padding: 12px 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    /* Food collage */
+    .aoc-hero-collage {
+        width: 100%;
+        min-width: 0;
+        min-height: 0;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-food-collage {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+    }
+
+    /* Left phone number tab */
+    .aoc-side-phone {
+        display: flex !important;
+        position: fixed;
+        top: 50%;
+        left: 0;
+        z-index: 1000;
+        width: 29px;
+        max-width: 29px;
+        padding: 12px 5px;
+        box-sizing: border-box;
+        writing-mode: vertical-rl;
+        transform: translateY(-50%) rotate(180deg);
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        border-radius: 0 12px 12px 0;
+        font-size: 10px;
+        line-height: 1.2;
+        letter-spacing: 0.5px;
+        overflow-wrap: normal;
+    }
+
+    .aoc-side-phone i {
+        font-size: 11px;
+    }
+
+    /* Hide social links on mobile */
+    .aoc-side-social {
+        display: none !important;
+    }
+
+    /* Hide scroll indicator on mobile */
+    .aoc-scroll-indicator {
+        display: none !important;
+    }
+}
+
+/* Very small mobile screens */
+@media screen and (max-width: 380px) {
+
+    .aoc-hero-inner {
+        width: calc(100% - 34px);
+        margin-left: 28px;
+        margin-right: 6px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .aoc-hero-content h1 {
+        font-size: 28px;
+    }
+
+    .aoc-hero-content p {
+        font-size: 13px;
+    }
+}
