@@ -1,0 +1,733 @@
+/* =========================================================
+   ARTS OF CATERING - HEADER
+========================================================= */
+
+:root {
+    --header-bg: #fffaf8;
+    --header-maroon: #591719;
+    --header-maroon-dark: #461214;
+    --header-text: #252525;
+    --header-white: #ffffff;
+}
+
+
+/* =========================================================
+   HEADER WRAPPER
+========================================================= */
+
+.arts-header {
+    width: 100%;
+    height: 190px;
+    background: var(--header-bg);
+    position: relative;
+    z-index: 9999;
+}
+
+
+/* =========================================================
+   HEADER CONTAINER
+========================================================= */
+
+.arts-header-container {
+    width: 100%;
+    max-width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 10px;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.arts-logo {
+    width: 190px;
+    height: 190px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    flex-shrink: 0;
+
+    text-decoration: none;
+}
+
+
+.arts-logo img {
+    width: 175px;
+    height: 190px;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.arts-navigation {
+    margin-left: auto;
+    margin-right: 32px;
+}
+
+
+.arts-navigation ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 54px;
+}
+
+
+.arts-navigation li {
+    margin: 0;
+    padding: 0;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   NAVIGATION LINK
+========================================================= */
+
+.arts-navigation li a {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    height: 190px;
+
+    color: var(--header-text);
+
+    text-decoration: none;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: color 0.25s ease;
+}
+
+
+/* =========================================================
+   SINGLE UNDERLINE
+========================================================= */
+
+.arts-navigation li a::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 55px;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--header-maroon);
+
+    transition: width 0.25s ease;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.arts-navigation li a:hover {
+    color: var(--header-maroon);
+}
+
+
+.arts-navigation li a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================================================
+   ACTIVE PAGE
+========================================================= */
+
+.arts-navigation li a.active {
+    color: var(--header-maroon);
+}
+
+
+.arts-navigation li a.active::after {
+    width: 100%;
+}
+
+
+/* =========================================================
+   GET FREE QUOTE BUTTON
+========================================================= */
+
+.arts-quote-btn {
+    min-width: 150px;
+    height: 47px;
+
+    padding: 0 25px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--header-maroon);
+
+    color: var(--header-white);
+
+    border-radius: 28px;
+
+    text-decoration: none;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.arts-quote-btn:hover {
+    background: var(--header-maroon-dark);
+
+    color: #fff;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(89, 23, 25, 0.18);
+}
+
+
+/* =========================================================
+   MOBILE BUTTON
+========================================================= */
+
+.arts-mobile-toggle {
+    display: none;
+
+    width: 44px;
+    height: 44px;
+
+    padding: 7px;
+
+    border: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 5px;
+}
+
+
+.arts-mobile-toggle span {
+    width: 27px;
+    height: 2px;
+
+    display: block;
+
+    background: var(--header-maroon);
+
+    transition: 0.3s ease;
+}
+
+
+/* =========================================================
+   MOBILE BUTTON ACTIVE
+========================================================= */
+
+.arts-mobile-toggle.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+
+.arts-mobile-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+
+.arts-mobile-toggle.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+.arts-mobile-menu {
+    display: none;
+
+    position: absolute;
+
+    top: 190px;
+    left: 0;
+
+    width: 100%;
+
+    background: var(--header-bg);
+
+    z-index: 9998;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.10);
+}
+
+
+.arts-mobile-menu.show {
+    display: block;
+}
+
+
+.arts-mobile-menu nav {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px 25px 25px;
+}
+
+
+.arts-mobile-menu nav a {
+    padding: 15px 5px;
+
+    color: var(--header-text);
+
+    text-decoration: none;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    border-bottom: 1px solid rgba(89, 23, 25, 0.10);
+
+    transition: color 0.25s ease;
+}
+
+
+.arts-mobile-menu nav a:hover,
+.arts-mobile-menu nav a.active {
+    color: var(--header-maroon);
+}
+
+
+/* =========================================================
+   MOBILE QUOTE BUTTON
+========================================================= */
+
+.arts-mobile-menu .mobile-quote-btn {
+    margin-top: 18px;
+
+    padding: 13px 20px;
+
+    text-align: center;
+
+    border: none;
+
+    background: var(--header-maroon);
+
+    color: #fff;
+
+    border-radius: 30px;
+}
+
+
+.arts-mobile-menu .mobile-quote-btn:hover {
+    background: var(--header-maroon-dark);
+
+    color: #fff;
+}
+
+
+/* =========================================================
+   LARGE DESKTOP
+========================================================= */
+
+@media (max-width: 1250px) {
+
+    .arts-header-container {
+        max-width: 1100px;
+    }
+
+    .arts-navigation ul {
+        gap: 38px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .arts-header {
+        height: 120px;
+    }
+
+    .arts-header-container {
+        max-width: 100%;
+        padding: 0 25px;
+    }
+
+    .arts-logo {
+        width: 145px;
+        height: 120px;
+    }
+
+    .arts-logo img {
+        width: 135px;
+        height: 135px;
+    }
+
+    .arts-navigation {
+        margin-right: 20px;
+    }
+
+    .arts-navigation ul {
+        gap: 25px;
+    }
+
+    .arts-navigation li a {
+        height: 120px;
+
+        font-size: 14px;
+    }
+
+    .arts-navigation li a::after {
+        bottom: 32px;
+    }
+
+    .arts-quote-btn {
+        min-width: 130px;
+
+        height: 44px;
+
+        padding: 0 18px;
+
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .arts-header {
+        height: 90px;
+    }
+
+    .arts-header-container {
+        padding: 0 20px;
+    }
+
+    .arts-logo {
+        width: 120px;
+        height: 90px;
+    }
+
+    .arts-logo img {
+        width: 115px;
+        height: 115px;
+    }
+
+    .arts-navigation {
+        display: none;
+    }
+
+    .arts-quote-btn {
+        display: none;
+    }
+
+    .arts-mobile-toggle {
+        display: flex;
+
+        margin-left: auto;
+    }
+
+    .arts-mobile-menu {
+        top: 90px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 575px) {
+
+    .arts-header {
+        height: 80px;
+    }
+
+    .arts-header-container {
+        padding: 0 15px;
+    }
+
+    .arts-logo {
+        width: 105px;
+        height: 80px;
+    }
+
+    .arts-logo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .arts-mobile-menu {
+        top: 80px;
+    }
+
+}
+
+
+/* =========================================================
+   ARTS OF CATERING PRELOADER
+========================================================= */
+
+#aoc-preloader {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    z-index: 99999;
+
+    opacity: 1;
+    visibility: visible;
+
+    transition:
+        opacity 0.6s ease,
+        visibility 0.6s ease;
+}
+
+
+/* Logo */
+
+.aoc-preloader-logo {
+    width: 380px;
+    max-width: 45vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aoc-preloader-logo img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+    object-fit: contain;
+
+    animation: aocLogoPulse 1.8s ease-in-out infinite;
+}
+
+
+/* Hide loader */
+
+#aoc-preloader.aoc-preloader-hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+/* Logo animation */
+
+@keyframes aocLogoPulse {
+
+    0% {
+        transform: scale(0.96);
+        opacity: 0.75;
+    }
+
+    50% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0.96);
+        opacity: 0.75;
+    }
+
+}
+
+
+/* =========================================================
+   PRELOADER RESPONSIVE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .aoc-preloader-logo {
+        width: 280px;
+        max-width: 65vw;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .aoc-preloader-logo {
+        width: 230px;
+        max-width: 70vw;
+    }
+
+}
+
+
+/* =========================================================
+   ARTS OF CATERING PRELOADER
+========================================================= */
+
+#aoc-preloader {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ffffff;
+
+    z-index: 999999;
+
+    opacity: 1;
+    visibility: visible;
+
+    transition:
+        opacity 0.6s ease,
+        visibility 0.6s ease;
+}
+
+
+/* =========================================================
+   PRELOADER LOGO
+========================================================= */
+
+.aoc-preloader-logo {
+    width: 380px;
+    max-width: 45vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aoc-preloader-logo img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+    object-fit: contain;
+
+    /* CONTINUOUS ROTATION */
+    animation: aocLogoRotate 3s linear infinite;
+
+    transform-origin: center center;
+
+    will-change: transform;
+}
+
+
+/* =========================================================
+   ROTATION
+========================================================= */
+
+@keyframes aocLogoRotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =========================================================
+   HIDE PRELOADER
+========================================================= */
+
+#aoc-preloader.aoc-preloader-hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .aoc-preloader-logo {
+        width: 280px;
+        max-width: 65vw;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .aoc-preloader-logo {
+        width: 230px;
+        max-width: 70vw;
+    }
+
+}
