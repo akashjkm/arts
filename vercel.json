@@ -7,8 +7,32 @@
   },
   "routes": [
     {
-      "src": "/",
+      "src": "^/$",
       "dest": "/api/index.php"
+    },
+    {
+      "src": "^/index\\.php$",
+      "dest": "/api/index.php"
+    },
+    {
+      "src": "^/about\\.php$",
+      "dest": "/api/about.php"
+    },
+    {
+      "src": "^/menu\\.php$",
+      "dest": "/api/menu.php"
+    },
+    {
+      "src": "^/events\\.php$",
+      "dest": "/api/events.php"
+    },
+    {
+      "src": "^/gallery\\.php$",
+      "dest": "/api/gallery.php"
+    },
+    {
+      "src": "^/contact\\.php$",
+      "dest": "/api/contact.php"
     },
     {
       "src": "/(.*)",
