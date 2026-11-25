@@ -12,211 +12,261 @@ include 'includes/header.php';
 
 <main>
 
+ <section class="aoc-hero">
+
     <!-- =========================================================
-         HERO SECTION
+         FLOATING ROTATING TRIANGLES
     ========================================================== -->
-    <section class="aoc-hero">
 
-        <div class="aoc-hero-inner">
+    <img
+        src="assets/images/triangle-shape.png"
+        alt=""
+        class="hero-triangle hero-triangle-1"
+    >
 
-            <!-- LEFT CONTENT -->
-            <div class="aoc-hero-content">
+    <img
+        src="assets/images/triangle-shape.png"
+        alt=""
+        class="hero-triangle hero-triangle-2"
+    >
 
-                <span class="aoc-hero-label">
-                    Planning Fabulous
-                </span>
+    <img
+        src="assets/images/triangle-shape.png"
+        alt=""
+        class="hero-triangle hero-triangle-3"
+    >
 
-                <h1>
-                    Book Us For Your
-                    <span>Dream Event</span>
-                </h1>
+    <img
+        src="assets/images/triangle-shape.png"
+        alt=""
+        class="hero-triangle hero-triangle-4"
+    >
+
+    <img
+        src="assets/images/triangle-shape.png"
+        alt=""
+        class="hero-triangle hero-triangle-5"
+    >
+
+    <img
+        src="assets/images/triangle-shape.png"
+        alt=""
+        class="hero-triangle hero-triangle-6"
+    >
+
+
+    <div class="aoc-hero-inner">
+
+        <!-- LEFT CONTENT -->
+        <div class="aoc-hero-content">
+
+            <!-- BUSINESS NAME -->
+            <span class="aoc-business-name">
+                JBR Catering Services
+            </span>
+
+            <span class="aoc-business-manager">
+                Managed by <strong>Rahul Thakur</strong>
+            </span>
+
+            <h1>
+                Delicious Food,
+                <span>Memorable Events</span>
+            </h1>
+
+            <p>
+                JBR Catering Services brings delicious food, elegant
+                presentation and professional catering to make every
+                celebration special and unforgettable.
+            </p>
+
+            <div class="aoc-hero-buttons">
+
+                <a href="contact.php" class="aoc-btn aoc-btn-primary">
+                    Book Now
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+                <a href="menu.php" class="aoc-btn aoc-btn-outline">
+                    Explore Menu
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO COLLAGE -->
+        <div class="aoc-hero-collage">
+
+            <img
+                src="assets/images/food.png"
+                alt="JBR Catering Services"
+                class="hero-food-collage"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+   <!-- =========================================================
+     ABOUT / OUR STORY
+========================================================== -->
+<section class="aoc-about section-padding">
+
+    <!-- Floating Decorations -->
+    <img
+        src="assets/images/tomato.png"
+        alt=""
+        class="about-floating-tomato"
+    >
+
+    <img
+        src="assets/images/mint-leaf.png"
+        alt=""
+        class="about-floating-mint"
+    >
+
+
+    <div class="container">
+
+        <div class="row align-items-center g-5">
+
+            <!-- IMAGE -->
+            <div class="col-lg-6">
+
+                <div class="aoc-about-image">
+
+                    <img
+                        src="assets/images/about-1.jpg"
+                        alt="JBR Catering"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTENT -->
+            <div class="col-lg-6">
+
+                <div class="aoc-section-heading">
+
+                    <span>Our Story</span>
+
+                    <h2>
+                        Trusted By
+                        <strong>200+ Satisfied Clients</strong>
+                    </h2>
+
+                </div>
+
 
                 <p>
-                    We create unforgettable experiences with delicious
-                    food, elegant presentation and professional catering
-                    services for every special occasion.
+                    JBR Catering isn’t just a service—it’s the art
+                    of creating memorable moments through taste,
+                    tradition, and innovation.
                 </p>
 
-                <div class="aoc-hero-buttons">
-
-                    <a href="contact.php" class="aoc-btn aoc-btn-primary">
-                        Book Now
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-
-                    <a href="menu.php" class="aoc-btn aoc-btn-outline">
-                        Explore Menu
-                        <i class="bi bi-arrow-right"></i>
-                    </a>
-
-                </div>
-
-            </div>
+                <p>
+                    We believe that every event is more than a gathering;
+                    it’s a story waiting to be told, plated, and shared.
+                </p>
 
 
-            <!-- =====================================================
-                 SINGLE HERO COLLAGE IMAGE
-            ====================================================== -->
-            <div class="aoc-hero-collage">
+                <ul class="aoc-feature-list">
 
-                <img
-                    src="assets/images/food.png"
-                    alt="Arts of Catering Food Collection"
-                    class="hero-food-collage"
-                >
+                    <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Personalized and customized catering for every client.
+                    </li>
 
-            </div>
+                    <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Highest standards of quality, hygiene and freshness.
+                    </li>
 
-        </div>
+                    <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Elegant and effortless event experiences.
+                    </li>
 
-    </section>
+                    <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Local flavours with modern presentation.
+                    </li>
 
+                    <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        Professional team delivering excellence at every event.
+                    </li>
 
-    <!-- =========================================================
-         ABOUT / OUR STORY
-    ========================================================== -->
-    <section class="aoc-about section-padding">
-
-        <div class="container">
-
-            <div class="row align-items-center g-5">
-
-                <!-- IMAGE -->
-                <div class="col-lg-6">
-
-                    <div class="aoc-about-image">
-
-                        <img
-                            src="assets/images/about-1.jpg"
-                            alt="Arts of Catering"
-                        >
-
-                    </div>
-
-                </div>
-
-
-                <!-- CONTENT -->
-                <div class="col-lg-6">
-
-                    <div class="aoc-section-heading">
-
-                        <span>Our Story</span>
-
-                        <h2>
-                            Trusted By
-                            <strong>200+ Satisfied Clients</strong>
-                        </h2>
-
-                    </div>
-
-                    <p>
-                        Arts of Catering isn’t just a service—it’s the art
-                        of creating memorable moments through taste,
-                        tradition, and innovation.
-                    </p>
-
-                    <p>
-                        We believe that every event is more than a gathering;
-                        it’s a story waiting to be told, plated, and shared.
-                    </p>
-
-
-                    <ul class="aoc-feature-list">
-
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Personalized and customized catering for every client.
-                        </li>
-
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Highest standards of quality, hygiene and freshness.
-                        </li>
-
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Elegant and effortless event experiences.
-                        </li>
-
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Local flavours with modern presentation.
-                        </li>
-
-                        <li>
-                            <i class="bi bi-check-circle-fill"></i>
-                            Professional team delivering excellence at every event.
-                        </li>
-
-                    </ul>
-
-                </div>
+                </ul>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
-    <!-- =========================================================
-         OFFER GALLERY
-    ========================================================== -->
-    <section class="aoc-offer-gallery section-padding">
+   <!-- =========================================================
+     OFFER GALLERY
+========================================================== -->
+<section class="aoc-offer-gallery section-padding">
+    <div class="container">
 
-        <div class="container">
+        <div class="aoc-section-heading text-center">
+            <span>What we offer</span>
+            <h2>Catering for every occasion</h2>
+            <p>From the first welcome drink to the last dessert, we plan, cook and serve so you can enjoy your event.</p>
+        </div>
 
-            <div class="aoc-section-heading text-center">
+        <div class="row g-4">
 
-                <span>Offer Gallery</span>
-
-                <h2>
-                    Arts of Catering
-                </h2>
-
-            </div>
-
-
-            <div class="row g-4">
-
-                <div class="col-md-4">
-                    <div class="aoc-gallery-card">
-                        <img
-                            src="assets/images/11.png"
-                            alt="Welcome Starters"
-                        >
+            <div class="col-md-4">
+                <a href="services.html" class="aoc-gallery-card">
+                    <img src="assets/images/11.png" alt="Welcome starters and live snack counter" loading="lazy">
+                    <div class="aoc-gallery-info">
                         <h3>Welcome Starters</h3>
+                        <p>Live counters and welcome drinks to greet your guests.</p>
+                        <span class="aoc-gallery-link">Explore &rarr;</span>
                     </div>
-                </div>
+                </a>
+            </div>
 
-
-                <div class="col-md-4">
-                    <div class="aoc-gallery-card">
-                        <img
-                            src="assets/images/10.jpg"
-                            alt="Catering Services"
-                        >
+            <div class="col-md-4">
+                <a href="menu.html" class="aoc-gallery-card">
+                    <img src="assets/images/10.jpg" alt="Premium catering table setup with fresh dishes" loading="lazy">
+                    <div class="aoc-gallery-info">
                         <h3>Premium Catering</h3>
+                        <p>Multi-cuisine menus cooked fresh and served with care.</p>
+                        <span class="aoc-gallery-link">Explore &rarr;</span>
                     </div>
-                </div>
+                </a>
+            </div>
 
-
-                <div class="col-md-4">
-                    <div class="aoc-gallery-card">
-                        <img
-                            src="assets/images/11.jpg"
-                            alt="Event Catering"
-                        >
+            <div class="col-md-4">
+                <a href="events.html" class="aoc-gallery-card">
+                    <img src="assets/images/11.jpg" alt="Elegant event table with gold plates and flowers" loading="lazy">
+                    <div class="aoc-gallery-info">
                         <h3>Special Events</h3>
+                        <p>Weddings, corporate and family functions, styled end to end.</p>
+                        <span class="aoc-gallery-link">Explore &rarr;</span>
                     </div>
-                </div>
-
+                </a>
             </div>
 
         </div>
 
-    </section>
+    </div>
+</section>
 
 
     <!-- =========================================================
@@ -445,147 +495,113 @@ include 'includes/header.php';
     </section>
 
 
-    <!-- =========================================================
-         BOOKING SECTION
-    ========================================================== -->
-    <section id="booking" class="aoc-booking section-padding">
+   <!-- =========================================================
+     BOOKING SECTION
+========================================================== -->
+<section id="booking" class="aoc-booking section-padding">
 
-        <div class="container">
+    <div class="container">
 
-            <div class="aoc-booking-card">
+        <div class="aoc-booking-card">
 
-                <div class="aoc-section-heading text-center">
+            <div class="aoc-section-heading text-center">
 
-                    <span>Book Us</span>
+                <span>Book Us</span>
 
-                    <h2>
-                        Where You Want Our Services
-                    </h2>
-
-                </div>
-
-
-                <form action="#" method="POST" class="aoc-booking-form">
-
-                    <div class="row g-3">
-
-                        <div class="col-lg-4 col-md-6">
-                            <input
-                                type="text"
-                                name="state"
-                                class="form-control"
-                                placeholder="Enter Your State"
-                            >
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <input
-                                type="text"
-                                name="city"
-                                class="form-control"
-                                placeholder="Enter Your City"
-                            >
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <input
-                                type="text"
-                                name="event_type"
-                                class="form-control"
-                                placeholder="Enter Event Type"
-                            >
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-
-                            <select name="guests" class="form-select">
-
-                                <option value="">
-                                    Number of Guests
-                                </option>
-
-                                <option value="1-50">
-                                    1 - 50
-                                </option>
-
-                                <option value="51-100">
-                                    51 - 100
-                                </option>
-
-                                <option value="101-250">
-                                    101 - 250
-                                </option>
-
-                                <option value="251-500">
-                                    251 - 500
-                                </option>
-
-                                <option value="500+">
-                                    500+
-                                </option>
-
-                            </select>
-
-                        </div>
-
-
-                        <div class="col-lg-4 col-md-6">
-
-                            <input
-                                type="tel"
-                                name="phone"
-                                class="form-control"
-                                placeholder="Enter Contact No."
-                            >
-
-                        </div>
-
-
-                        <div class="col-lg-4 col-md-6">
-
-                            <input
-                                type="email"
-                                name="email"
-                                class="form-control"
-                                placeholder="Enter Your Email"
-                            >
-
-                        </div>
-
-
-                        <div class="col-12">
-
-                            <textarea
-                                name="message"
-                                class="form-control"
-                                rows="5"
-                                placeholder="Tell us about your event"
-                            ></textarea>
-
-                        </div>
-
-
-                        <div class="col-12 text-center">
-
-                            <button
-                                type="submit"
-                                class="aoc-btn aoc-btn-primary"
-                            >
-                                Send Request
-                                <i class="bi bi-arrow-right"></i>
-                            </button>
-
-                        </div>
-
-                    </div>
-
-                </form>
+                <h2>
+                    Where You Want Our Services
+                </h2>
 
             </div>
 
+            <form action="#" method="POST" class="aoc-booking-form">
+
+                <div class="row g-3">
+
+                    <div class="col-lg-4 col-md-6">
+                        <input
+                            type="text"
+                            name="state"
+                            class="form-control"
+                            placeholder="Enter Your State"
+                        >
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <input
+                            type="text"
+                            name="city"
+                            class="form-control"
+                            placeholder="Enter Your City"
+                        >
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <input
+                            type="text"
+                            name="event_type"
+                            class="form-control"
+                            placeholder="Enter Event Type"
+                        >
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <select name="guests" class="form-select">
+                            <option value="">Number of Guests</option>
+                            <option value="1-50">1 - 50</option>
+                            <option value="51-100">51 - 100</option>
+                            <option value="101-250">101 - 250</option>
+                            <option value="251-500">251 - 500</option>
+                            <option value="500+">500+</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <input
+                            type="tel"
+                            name="phone"
+                            class="form-control"
+                            placeholder="Enter Contact No."
+                        >
+                    </div>
+
+                    <div class="col-lg-4 col-md-6">
+                        <input
+                            type="email"
+                            name="email"
+                            class="form-control"
+                            placeholder="Enter Your Email"
+                        >
+                    </div>
+
+                    <div class="col-12">
+                        <textarea
+                            name="message"
+                            class="form-control"
+                            rows="5"
+                            placeholder="Tell us about your event"
+                        ></textarea>
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <button
+                            type="submit"
+                            class="aoc-btn aoc-btn-primary"
+                        >
+                            Send Request
+                            <i class="bi bi-arrow-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </form>
+
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
     <!-- =========================================================
@@ -803,7 +819,7 @@ include 'includes/header.php';
 <!-- LEFT SIDE PHONE NUMBER -->
 <a href="tel:+919643386541" class="aoc-side-phone">
     <i class="bi bi-telephone-fill"></i>
-    <span>+91 96433 86541</span>
+    <span>+91  75030 16060</span>
 </a>
 
 <!-- RIGHT SIDE SOCIAL MEDIA -->

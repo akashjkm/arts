@@ -123,7 +123,7 @@ $base_path = $base_path ?? '';
 
         <div class="aoc-preloader-logo">
             <img
-                src="<?= $base_path; ?>assets/images/logo.png"
+                src="<?= $base_path; ?>assets/images/logo-header.png"
                 alt="Arts of Catering"
             >
         </div>
@@ -153,7 +153,7 @@ $base_path = $base_path ?? '';
             aria-label="Arts of Catering">
 
             <img
-                src="<?= $base_path; ?>assets/images/logo.png"
+                src="<?= $base_path; ?>assets/images/logo.jpeg"
                 alt="Arts of Catering Logo">
 
         </a>

@@ -1,10 +1,11 @@
 .contact-page {
-    --contact-ink: #2b2020;
-    --contact-muted: #655c59;
-    --contact-maroon: #591719;
-    --contact-red: #9b2025;
-    --contact-paper: #fffaf7;
-    --contact-line: #e8d8d2;
+    --contact-ink: #282535;
+    --contact-muted: #55525F;
+    --contact-maroon: #282535;
+    --contact-red: #97794a;
+    --contact-red-dark: #836834;
+    --contact-paper: #FAF6EF;
+    --contact-line: #E6DFD2;
     color: var(--contact-ink);
 }
 
@@ -15,9 +16,9 @@
     align-items: center;
     overflow: hidden;
     color: #fff;
-    background-color: #312b27;
+    background-color: #211f2c;
     background-image:
-        linear-gradient(90deg, rgba(35, 22, 22, 0.83), rgba(35, 22, 22, 0.3)),
+        linear-gradient(90deg, rgba(33, 31, 44, 0.9), rgba(33, 31, 44, 0.38)),
         url("../assets/images/catering-event.jpg");
     background-position: center 58%;
     background-size: cover;
@@ -32,28 +33,29 @@
 .contact-eyebrow {
     display: inline-block;
     margin-bottom: 12px;
-    color: var(--contact-red);
+    color: var(--contact-red-dark);
     font-size: 12px;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 1.4px;
+    letter-spacing: 2.5px;
 }
 
 .contact-hero .contact-eyebrow {
-    color: #f2b8a9;
+    color: #b99a63;
 }
 
 .contact-hero h1 {
     max-width: 650px;
     margin: 0 0 14px;
     color: #fff;
+    font-family: "Cormorant Garamond", Georgia, serif;
     font-size: clamp(40px, 5vw, 62px);
-    font-weight: 800;
+    font-weight: 600;
     line-height: 1.08;
 }
 
 .contact-hero h1 span {
-    color: #f2b8a9;
+    color: #b99a63;
 }
 
 .contact-hero p {
@@ -67,7 +69,7 @@
 .contact-main {
     padding: 76px 24px 92px;
     background-color: var(--contact-paper);
-    background-image: radial-gradient(#e8d8d2 0.65px, transparent 0.65px);
+    background-image: radial-gradient(rgba(151, 121, 74, 0.12) 0.65px, transparent 0.65px);
     background-size: 18px 18px;
 }
 
@@ -88,8 +90,9 @@
 .contact-form-heading h2 {
     margin: 0;
     color: var(--contact-maroon);
+    font-family: "Cormorant Garamond", Georgia, serif;
     font-size: clamp(29px, 3vw, 38px);
-    font-weight: 750;
+    font-weight: 600;
     line-height: 1.2;
 }
 
@@ -118,7 +121,7 @@
     aspect-ratio: 1;
     place-items: center;
     color: var(--contact-red);
-    background: #f5e8e3;
+    background: #F7F3EC;
     font-size: 18px;
 }
 
@@ -153,7 +156,7 @@
     font-size: 14px;
     font-weight: 700;
     text-decoration: underline;
-    text-decoration-color: #c99b92;
+    text-decoration-color: #b99a63;
     text-underline-offset: 5px;
 }
 
@@ -166,7 +169,7 @@
     padding: clamp(24px, 4vw, 42px);
     background: #fff;
     border: 1px solid var(--contact-line);
-    box-shadow: 0 18px 50px rgba(89, 23, 25, 0.07);
+    box-shadow: 0 18px 50px rgba(40, 37, 53, 0.07);
 }
 
 .contact-form-heading {
@@ -208,7 +211,7 @@
     padding: 11px 13px;
     color: var(--contact-ink);
     background: #fff;
-    border: 1px solid #d9cbc5;
+    border: 1px solid var(--contact-line);
     border-radius: 3px;
     outline: none;
     font: inherit;
@@ -223,8 +226,8 @@
 .contact-field input:focus,
 .contact-field select:focus,
 .contact-field textarea:focus {
-    border-color: var(--contact-maroon);
-    box-shadow: 0 0 0 3px rgba(89, 23, 25, 0.1);
+    border-color: var(--contact-red);
+    box-shadow: 0 0 0 3px rgba(151, 121, 74, 0.14);
 }
 
 .contact-field textarea::placeholder {

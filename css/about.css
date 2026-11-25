@@ -1,10 +1,11 @@
 .about-page {
-    --about-ink: #2b2020;
-    --about-muted: #655c59;
-    --about-maroon: #591719;
-    --about-red: #9b2025;
-    --about-paper: #fffaf7;
-    --about-line: #e8d8d2;
+    --about-ink: #282535;
+    --about-muted: #55525F;
+    --about-maroon: #282535;
+    --about-red: #97794a;
+    --about-red-dark: #836834;
+    --about-paper: #FAF6EF;
+    --about-line: #E6DFD2;
     color: var(--about-ink);
 }
 
@@ -12,7 +13,7 @@
     position: relative;
     overflow: hidden;
     background-color: var(--about-paper);
-    background-image: radial-gradient(#e8d8d2 0.7px, transparent 0.7px);
+    background-image: radial-gradient(rgba(151, 121, 74, 0.12) 0.7px, transparent 0.7px);
     background-size: 18px 18px;
 }
 
@@ -35,19 +36,20 @@
 .about-eyebrow {
     display: inline-block;
     margin-bottom: 14px;
-    color: var(--about-red);
+    color: var(--about-red-dark);
     font-size: 13px;
-    font-weight: 700;
+    font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 2.5px;
 }
 
 .about-hero h1 {
     max-width: 560px;
     margin: 0 0 20px;
     color: var(--about-maroon);
+    font-family: "Cormorant Garamond", Georgia, serif;
     font-size: clamp(42px, 5vw, 66px);
-    font-weight: 800;
+    font-weight: 600;
     line-height: 1.06;
 }
 
@@ -129,8 +131,9 @@
 .about-contact-band h2 {
     margin: 0;
     color: var(--about-maroon);
+    font-family: "Cormorant Garamond", Georgia, serif;
     font-size: clamp(30px, 3.2vw, 43px);
-    font-weight: 750;
+    font-weight: 600;
     line-height: 1.18;
 }
 
@@ -146,7 +149,7 @@
     align-items: center;
     gap: 9px;
     margin-top: 4px;
-    color: var(--about-maroon);
+    color: var(--about-red-dark);
     font-size: 14px;
     font-weight: 700;
     text-decoration-color: #c99b92;
@@ -163,7 +166,7 @@
 
 .about-values {
     padding: 78px 24px 88px;
-    background: #f8f1ed;
+    background: #F7F3EC;
     border-top: 1px solid var(--about-line);
     border-bottom: 1px solid var(--about-line);
 }
@@ -194,8 +197,8 @@
     aspect-ratio: 1;
     margin-bottom: 17px;
     place-items: center;
-    color: var(--about-red);
-    border: 1px solid #d9b9b1;
+    color: var(--about-gold-light, #97794a);
+    border: 1px solid var(--about-line);
     font-size: 19px;
 }
 
@@ -216,7 +219,9 @@
 
 .about-contact-band {
     padding: 62px 24px;
-    background: #fff;
+    background: #282535;
+    border-top: 1px solid rgba(151, 121, 74, 0.35);
+    border-bottom: 1px solid rgba(151, 121, 74, 0.35);
 }
 
 .about-contact-inner {
@@ -226,7 +231,12 @@
     gap: 28px;
 }
 
+.about-contact-band .about-eyebrow {
+    color: #b99a63;
+}
+
 .about-contact-band h2 {
+    color: #fff;
     font-size: clamp(28px, 3vw, 38px);
 }
 
