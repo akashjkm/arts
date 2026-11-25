@@ -54,7 +54,7 @@
                     </div>
                     <div>
                         <dt>Find us :</dt>
-                        <dd>Shop no 1901, Gali Lasua, Sita Ram Bazar, Old Delhi - 110006</dd>
+                        <dd>1488, Gali Arya Samaj, Old Delhi, Kucha Pati Ram, Sitaram Bazar, New Delhi, Delhi, 110006</dd>
                     </div>
                     <div>
                         <dt>Hours :</dt>
